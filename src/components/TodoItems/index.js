@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
 class TodoItems extends Component {
   static PropTypes = {
-    items: PropTypes.array
+    items: propTypes.array
   };
 
   renderItem = item => {
