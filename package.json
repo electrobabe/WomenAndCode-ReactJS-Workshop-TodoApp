@@ -1,7 +1,7 @@
 {
   "name": "womenandcode-reactjs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Women And Code Workshop: Introduction to ReactJS",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

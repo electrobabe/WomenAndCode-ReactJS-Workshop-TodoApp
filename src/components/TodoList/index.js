@@ -31,6 +31,19 @@ class TodoList extends Component {
     }
   }
 
+  removeItem = key => {
+    console.log("removeItem", key);
+    const filteredItems = this.state.items.filter(item => {
+      return item.key !== key;
+    });
+
+    this.setState({ items: filteredItems });
+  };
+
+  handleChildUnmount() {
+    this.setState({ renderChild: false });
+  }
+
   render() {
     return (
       <div>
@@ -43,7 +56,7 @@ class TodoList extends Component {
           />
           <button type="submit">add</button>
         </form>
-        <TodoItems items={this.state.items} />
+        <TodoItems items={this.state.items} removeItem={this.removeItem} />
       </div>
     );
   }
