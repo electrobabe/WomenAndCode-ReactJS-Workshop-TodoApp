@@ -9,8 +9,8 @@ class TodoItems extends Component {
 
   renderItem = item => {
     return (
-      <li key={item.key} onClick={() => this.props.removeItem(item.key)}>
-        {item.text}
+      <li key={item.key}>
+        {item.text} <i onClick={() => this.props.removeItem(item.key)}>x</i>
       </li>
     );
   };
